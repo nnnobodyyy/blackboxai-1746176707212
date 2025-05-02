@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SnipSync - AI Video Creation Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Subtle fade-in animation */
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-indigo-600">SnipSync</a>
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+        <li><a href="#features" class="hover:text-indigo-600 transition">Features</a></li>
+        <li><a href="#pricing" class="hover:text-indigo-600 transition">Pricing</a></li>
+        <li><a href="#testimonials" class="hover:text-indigo-600 transition">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+      </ul>
+      <a href="#signup" class="hidden md:inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition">Get Started</a>
+      <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <ul class="flex flex-col space-y-4 p-6 text-gray-700 font-semibold">
+        <li><a href="#features" class="hover:text-indigo-600 transition">Features</a></li>
+        <li><a href="#pricing" class="hover:text-indigo-600 transition">Pricing</a></li>
+        <li><a href="#testimonials" class="hover:text-indigo-600 transition">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+        <li><a href="#signup" class="bg-indigo-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition block text-center">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-20 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white text-center fade-in">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Create Stunning Videos Effortlessly with AI</h1>
+      <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">SnipSync uses advanced AI technology to help you create professional-quality videos in minutes, no experience needed.</p>
+      <a href="#signup" class="inline-block bg-white text-indigo-600 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">Get Started for Free</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-12">Powerful Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="space-y-4">
+          <div class="text-indigo-600 text-5xl">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 class="text-xl font-semibold">AI-Powered Editing</h3>
+          <p class="text-gray-600">Automatically generate and edit videos with smart AI tools that save you time and effort.</p>
+        </div>
+        <div class="space-y-4">
+          <div class="text-indigo-600 text-5xl">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3 class="text-xl font-semibold">Templates & Customization</h3>
+          <p class="text-gray-600">Choose from a wide range of templates and customize your videos to match your brand.</p>
+        </div>
+        <div class="space-y-4">
+          <div class="text-indigo-600 text-5xl">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h3 class="text-xl font-semibold">Cloud Storage</h3>
+          <p class="text-gray-600">Save your projects securely in the cloud and access them anytime, anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-12">Free for Everyone</h2>
+      <div class="max-w-md mx-auto">
+        <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition border-2 border-indigo-600">
+          <h3 class="text-xl font-semibold mb-4">Free Plan</h3>
+          <p class="text-4xl font-bold mb-4">Completely Free</p>
+          <ul class="text-gray-600 mb-6 space-y-2 text-left">
+            <li>Unlimited videos</li>
+            <li>All AI editing tools</li>
+            <li>Templates & customization</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#signup" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-12">What Our Users Say</h2>
+      <div class="max-w-4xl mx-auto space-y-12">
+        <blockquote class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <p class="text-lg italic text-gray-700">"SnipSync has transformed the way I create videos. The AI tools are incredibly intuitive and save me hours!"</p>
+          <footer class="mt-4 text-gray-600 font-semibold">- Sarah K.</footer>
+        </blockquote>
+        <blockquote class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <p class="text-lg italic text-gray-700">"The templates and customization options are fantastic. I can create branded videos quickly and easily."</p>
+          <footer class="mt-4 text-gray-600 font-semibold">- Michael B.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer Section -->
+  <footer id="contact" class="bg-indigo-600 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-6">Get in Touch</h2>
+      <p class="mb-6 max-w-2xl mx-auto">Have questions or want to learn more? Reach out to our team and we'll get back to you promptly.</p>
+      <a href="mailto:support@snipsync.com" class="inline-block bg-white text-indigo-600 font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition">Contact Support</a>
+      <p class="mt-12 text-sm text-indigo-200">&copy; 2024 SnipSync. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
